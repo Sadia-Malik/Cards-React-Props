@@ -1,0 +1,86 @@
+.card-sqr{
+    width: 40px;
+    height: 40x;
+    padding: 6px 1px;
+    font-size: 18px;
+    color: #fff;
+    background: rgba(0,0,0,0.7);
+    border:  1px solid #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 45px;
+    transition: all 0.3s;
+    }
+    .card-sqr:hover{
+      border: 1px solid #ffd400;
+      background: rgba(0,0,0,0.7)
+    }
+    .card-po{
+    position:relative
+    }
+    
+    .crd-id {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 50px;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    
+    }
+    .card-po:hover .crd-id{
+    
+    opacity: 1;
+    -webkit-transform: translateY(-119px);
+    -moz-transform: translateY(-119px);
+    transform: translateY(-119px);
+    
+    }
+    .card{
+    cursor: pointer;
+    box-shadow: 2px 2px 7px 7px rgb(141, 139, 141);
+    box-shadow: 2px 2px 7px 7px rgb(215, 212, 215);
+    
+    }
+    
+    .bcmnt{
+    background:  #ffd400;
+    }
+    @media screen and (max-width: 988px){
+    .card-po:hover .crd-id{
+      -webkit-transform: translateY(-95px);
+      -moz-transform: translateY(-95px);
+      transform: translateY(-95px);
+    }
+    }
+    @media screen and (max-width: 767px){
+    .card-po:hover .crd-id{
+      -webkit-transform: translateY(-92px);
+      -moz-transform: translateY(-92px);
+      transform: translateY(-92px);
+    }
+    }
+   
+    /* card overlay styling *******/
+    
+    .crd-over2{
+    background: linear-gradient(to bottom, rgba(31, 32, 34, 0) 0%, rgba(31, 32, 34, 0.9) 55%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.1s ease-in-out 0s;
+    transition: all 0.4s;
+    transition-delay: 0.1s;
+    }
+    .card-po:hover .crd-over2{
+    opacity: 1;
+    }
+
+    
